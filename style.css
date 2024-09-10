@@ -112,7 +112,10 @@ input::placeholder{
     color: #eee1ee;
     font-size: 16px;
 }
-
+li img:hover{
+    border-radius: 50%;
+    background-color: #fff;
+}
 ul li.checked{
     text-decoration: line-through;
     color: lightgray;
@@ -127,8 +130,4 @@ li img{
     height: 32px;
     width: 30px;
 
-}
-li img:hover{
-    border-radius: 50%;
-    background-color: #fff;
 }
