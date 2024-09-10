@@ -26,19 +26,16 @@ tasklist.addEventListener('click',(e)=>{
         saveData(); 
     }
 })
-
 let saveData = () =>{
     localStorage.setItem('data',tasklist.innerHTML);
 }
 let displayData =()=>{
     tasklist.innerHTML=localStorage.getItem('data');
 }
-
 inputfield.addEventListener("keypress", function(event) {
     if (event.key == "Enter") {
       event.preventDefault();
         document.getElementById('btn').click()
     }
   });
-
 displayData()   
